@@ -7,8 +7,6 @@ respuesta=requests.get(url)
 print(respuesta.status_code)
 weather=respuesta.json()
 
-
-
 lista = weather["hourly"]["temperature_2m"]
 temperaturas = ''.join(str(lista))
 
