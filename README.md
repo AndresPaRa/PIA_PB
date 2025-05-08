@@ -1,8 +1,8 @@
 INTEGRANTES:
-Andrés Palacios Ramírez | 2115331
-Mauricio Lionel Ramírez Luna | 2096908
-Erick Gabriel Hernández Galaviz | 2144801
-José Ángel Santana Tovar | 2169290
+Andrés Palacios Ramírez | 2115331 |
+Mauricio Lionel Ramírez Luna | 2096908 |
+Erick Gabriel Hernández Galaviz | 2144801 |
+José Ángel Santana Tovar | 2169290 |
 Julio Francisco Gutiérrez Ruiz | 2144388
 
 Planteamiento del Problema
