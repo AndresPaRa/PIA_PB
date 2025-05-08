@@ -1,8 +1,8 @@
 INTEGRANTES:
-Andrés Palacios|
-Lionel Ramírez
-Erick Hernández
-José Santana
+Andrés Palacios, 
+Lionel Ramírez, 
+Erick Hernández, 
+José Santana, 
 Julio Gutiérrez
 
 Planteamiento del Problema
