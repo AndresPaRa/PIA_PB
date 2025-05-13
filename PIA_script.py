@@ -99,4 +99,4 @@ plt.bar(x,y)
 plt.xlabel('Numero de día')
 plt.ylabel('Temperatura en °C')
 plt.show()
-#C:\\Users\\andre\\OneDrive\\Documentos\\Paison\\prueba.txt"
+
