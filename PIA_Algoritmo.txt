@@ -1,0 +1,98 @@
+ALGORITMO 1
+1.  Inicio
+2.  importar requests
+3.  importar json
+4.  url ← "https://api.open-meteo.com/v1/forecast?latitude=25.6751&longitude=-100.3185&hourly=temperature_2m&start_date=2025-02-16&end_date=2025-05-16"
+5.  respuesta ← requests.get(url)
+6.  imprimir respuesta.status_code
+7.  weather ← respuesta.json()
+8.  Lista ← weather["hourly"]["temperature_2m"]
+9.  temperaturas ← ''.join(str(lista))
+10. archivo ← "C:\\Users\\Erick.Galaviz\\OneDrive\\FCFM\\Python\\SchoolWorks\\PIA\\temperaturas.txt"
+11. abrir archivo en modo escritura
+12. archivo ← open(archivo, "w")
+13. escribir las temperaturas del archivo
+14. cerrar archivo
+15. abrir archivo "C:\\Users\\andre\\OneDrive\\Documentos\\Paison\\prueba.txt"
+16. guardadito ← archivo
+17. cerrar archivo
+18. patron ← r"\d{2}.\d|\d{1}.\d"
+19. resultado ← buscar números en guardadito con el patrón "patrón"
+20. lista_temperaturas ← []
+21. para cada numerote en resultado
+22.     lista_temperaturas ← convertir resultado a números flotantes
+23.     cont ← cont + 1
+24. fin del ciclo for del paso 21
+25. libro ← cargar "C:\\Users\\andre\\OneDrive\\Documentos\\Paison\\procesado.xlsx"
+26. hoja ← libro.active
+27. importar librería re
+28. importar librería math
+29. importar librería openpyxl
+30. de openyxl importar workbook
+31. de openyxl importar load_workbook
+32. de matplotib importar pyplot como plt
+33. total ← 0
+34. media_arit ← 0
+35. cont ← 0
+36. para cont desde 0 hasta 89:
+37.     total ← total + lista_temperaturas[cont]
+38.     cont ← cont + 1
+39. fin del ciclo for del paso 36
+40. media_arit ← total / cont
+41. ordenar lista_temperaturas
+42. par ← cont mod 2
+43. Si par = 0 entonces
+44.     mitad ← (cont / 2)
+45.     mediana_lista ← (lista_temperaturas[mitad] + lista_temperaturas[mitad + 1]) / 2
+46. Si no
+47.     mitad ← (cont+1) / 2
+48.     mediana_lista ← lista_temperaturas[mitad]
+49. Fin condicional doble del paso 42
+50. diccionario_temperatura ← {}
+51.     cont ← 0
+52. para cont desde 0 hasta 89, entonces:
+53.     si lista_temperaturas[cont] no esta en diccionario_temperatura={}, entonces:
+54.         diccionario_temperatura[lista_temperaturas[cont]] ← 1
+55.     si no
+56.         diccionario_temperatura[lista_temperaturas[cont]] ← diccionario_temperatura[lista_temperaturas[cont]] + 1
+57.     fin condicional doble del paso 53
+58.     cont ← cont + 1
+59. fin ciclo for del paso 52
+60. temperaturas_dic ← list(diccionario_temperatura.keys())
+61. cant_temp ← len(temperaturas_dic)
+62. muestra ← temperaturas_dic[0]
+63. freq ← diccionario_temperatura.get(muestra)
+64. cant_temp ← cant_temp - 1
+65. i ← 0
+66. para i desde 1 hasta cant_temp, entonces:
+67.     freq_2 ← diccionario_temperatura.get(temperaturas_dic[i])
+68.     Si freq_2 > freq, entonces
+69.         muestra ← temperaturas_dic[i]
+70.         freq ← freq_2
+71.     Fin condicional paso 68
+72.         i ← i + 1
+73. fin ciclo for del paso 66
+74. cont ← 0
+75. para cont desde 0 hasta 89
+76.     suma ← suma + (lista_temperaturas[cont] - media_arit)^2
+77.     cont ← cont + 1
+78. fin del ciclo for del paso 75
+79. var ← suma/cont
+80. estandar ← (var)**1/2
+81. hoja['A2'] ← media_arit
+82. hoja['B2'] ← mediana_lista
+83. hoja['C2'] ← muestra
+84. hoja['D2'] ← var
+85. hoja['E2'] ← estandar
+86. guardar libro como "C:\\Users\\andre\\OneDrive\\Documentos\\Paison\\respuesta.xlsx"
+87. mostrar
+"Temperatura con mayor frecuencia: " + muestra
+"Mediana de la temperatura: " + mediana_lista
+"Media de las temperaturas: " media_arit
+"Varianza: " var
+"Desviación estándar: " estandar
+88. x ← lista de rango (cont)
+89. y ← lista_temperaturas
+90. graficar barras x, y con etiquetas "Número de día", "Temperatura en °C"
+91. mostrar gráfico
+92. fin del algoritmo
