@@ -87,7 +87,7 @@ book.save("C:\\Users\\andre\\OneDrive\\Documentos\\Paison\\respuesta.xlsx")
 
 #De momento mostramos los resultados
 print("Temperatura con mayor frecuencia: {}".format(muestra))
-print("Mediana de la temperatura: {}".format(mediana_lista))
+print("Mediana de la temperatura: {:.2f}".format(mediana_lista))
 print("Media de las temperaturas: {:.2f}".format(media_arit))
 print("Varianza: {:.2f}".format(var))
 print("Desviación estándar: {:.2f}".format(estandar))
