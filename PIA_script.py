@@ -98,5 +98,6 @@ y = lista_temperaturas
 plt.bar(x,y)
 plt.xlabel('Numero de día')
 plt.ylabel('Temperatura en °C')
+plt.title("Temperatura en °C por hora")
 plt.show()
 
