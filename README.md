@@ -29,4 +29,4 @@ A partir de estos datos, serán calculadas las estadísticas descriptivas:
 * Varianza
 * Desviación estándar
 
-Dentro de este proyecto, ambién será realizada una visualización gráfica (gráfica de barras) para representar los cambios diarios en la temperatura máxima.
+Dentro de este proyecto, ambién será realizada una visualización gráfica (gráfica de linea) para representar los cambios diarios en la temperatura máxima.
