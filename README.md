@@ -19,7 +19,7 @@ Planteamiento del Problema
   Utilizaremos los siguientes datos diarios de la API:
 
   * Temperatura promedio a 2 metros (temperature_2m)
-  * Rango de fechas: esto es algo personalizable, pero para este caso se considerará del 23 de enero al 30 de abril de 2025 
+  * Rango de fechas: esto es algo personalizable, pero para este caso se considerará del 23 de febrero al 30 de abril de 2025 
 
 A partir de estos datos, serán calculadas las estadísticas descriptivas:
 
